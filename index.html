@@ -1,0 +1,126 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Library - Home</title>
+  <link rel="stylesheet" href="style.css">
+
+
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    }
+
+    #main-content {
+      padding: 20px;
+    }
+
+    .home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .home .content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .home .content h3 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .home .content p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .home .content .contact {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4a90e2;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .home .content .contact:hover {
+      background-color: #357abd;
+    }
+
+    .home .image {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+    }
+
+    .home .image img {
+      max-width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .home .image img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+  
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+  <section class="n">
+    <nav class="nav">
+      <div class="navbar">
+        <img src="pics/logo.png" alt="Library Logo">
+        <div class="menu">
+          <ul class="list">
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="books.html">Books</a></li>
+            <li class="items"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <form class="sls">
+          <input class="search" type="search" placeholder="search">
+          <button class="button" type="submit">Log In</button>
+          <button class="button" type="submit">SignUp</button>
+        </form>
+      </div>
+    </nav>
+  </section>
+
+  <main id="main-content">
+    <section class="home">
+      <div class="content">
+        <h3>Online Library</h3>
+        <p>We lose ourselves in books, We find ourselves there too...</p>
+        <a href="contact.html" class="contact">Contact Us</a>
+      </div>
+      <div class="image">
+        <img src="pics/girl.png" alt="Library Image">
+        <img src="pics/boy.png" alt="Library Image">
+      </div>
+    </section>
+  </main>
+</body>
+</html>
